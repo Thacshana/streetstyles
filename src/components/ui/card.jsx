@@ -11,11 +11,12 @@ const Card = ({
 }) => {
   return (
     <div className="w-full rounded-xl border shadow p-1">
-      <div className="relative min-h-60 shadow-md">
+      <div className="relative rounded-lg min-h-60 shadow-md">
+        <div className="absolute inset-0 rounded-lg bg-gray-200 animate-pulse w-full h-full z-10"></div>
         <Image
           fill
-          src={`/${image}.jpeg`}
-          className="rounded-lg bg-cover object-cover w-full h-full"
+          src={image}
+          className="z-20 rounded-lg  bg-cover object-cover w-full h-full"
           alt={`Image for ${title}`}
           loading="lazy"
         />
