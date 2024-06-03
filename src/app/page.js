@@ -39,9 +39,9 @@ export default function Home() {
               All Latest products from our store
             </h1>
 
-            <p className="mt-1 max-w-sm text-xs text-gray-600 text-center">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
-              veniam inventore animi?
+            <p className="mt-1 max-w-sm text-xs text-pretty text-gray-600 text-center">
+              Elevate your wardrobe with pieces crafted to make every moment
+              unforgettable.
             </p>
 
             <Input placeholder="search" className={"mt-10 max-w-sm"} />
@@ -85,7 +85,7 @@ export default function Home() {
             </TabsList>
 
             <TabsContent value="all">
-              <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-10">
+              <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-8">
                 {/* card */}
                 {Object.values(products)
                   .flat(2)
@@ -103,7 +103,7 @@ export default function Home() {
               </div>
             </TabsContent>
             <TabsContent value="women">
-              <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-10">
+              <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-8">
                 {/* card */}
                 {products.women.map((product, idx) => (
                   <Card
@@ -118,7 +118,7 @@ export default function Home() {
               </div>
             </TabsContent>
             <TabsContent value="men">
-              <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-10">
+              <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-8">
                 {/* card */}
                 {products.men.map((product, idx) => (
                   <Card
@@ -133,7 +133,7 @@ export default function Home() {
               </div>
             </TabsContent>
             <TabsContent value="kids">
-              <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-10">
+              <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-8">
                 {/* card */}
                 {products.kids.map((product, idx) => (
                   <Card
@@ -148,7 +148,7 @@ export default function Home() {
               </div>
             </TabsContent>
             <TabsContent value="cosmetics">
-              <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-10">
+              <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-8">
                 {/* card */}
                 {products.cosmetics.map((product, idx) => (
                   <Card
