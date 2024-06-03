@@ -4,7 +4,7 @@ export default {
       title: "Elegant Dress",
       description: "A stylish and elegant dress perfect for evening parties.",
       amount: 150,
-      image: `https://firebasestorage.googleapis.com/v0/b/host-37834.appspot.com/o/Women%2F1.jpg?alt=media&token=e97dfcf3-8385-429b-9635-5c7e94733590`,
+      image: `https://firebasestorage.googleapis.com/v0/b/host-37834.appspot.com/o/Women%2F4.jpg?alt=media&token=e680230c-8cd2-4355-853d-bbb9bb469f10`,
     },
     {
       title: "Casual Blouse",
@@ -22,7 +22,7 @@ export default {
       title: "Summer Skirt",
       description: "A light and airy skirt for hot summer days.",
       amount: 60,
-      image: `https://firebasestorage.googleapis.com/v0/b/host-37834.appspot.com/o/Women%2F4.jpg?alt=media&token=e680230c-8cd2-4355-853d-bbb9bb469f10`,
+      image: `https://firebasestorage.googleapis.com/v0/b/host-37834.appspot.com/o/Women%2F1.jpg?alt=media&token=e97dfcf3-8385-429b-9635-5c7e94733590`,
     },
     {
       title: "Trendy Jeans",
