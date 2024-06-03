@@ -1,33 +1,36 @@
 import Image from "next/image";
 import React from "react";
 import { Button } from "./button";
+import currencyFormatter from "@/utils/currencyFormatter";
 
-const Card = ({ image }) => {
+const Card = ({
+  image,
+  title = "Title",
+  description = "Description",
+  amount = 300,
+}) => {
   return (
     <div className="w-full rounded-xl border shadow p-1">
       <div className="relative min-h-60 shadow-md">
         <Image
           fill
-          src={`/all-items/${image % 5}.jpeg`}
+          src={`/${image}.jpeg`}
           className="rounded-lg bg-cover object-cover w-full h-full"
-          alt=""
+          alt={`Image for ${title}`}
+          loading="lazy"
         />
       </div>
 
       <div className="mt-3 px-3 pb-3">
         <h4 className="mt-2 text-sm font-medium line-clamp-2 text-gray-800">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          {title}
         </h4>
 
-        <p className="mt-2 text-xs text-gray-600 line-clamp-3">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur
-          deleniti blanditiis deserunt voluptatem corrupti cupiditate nobis fuga
-          quia quaerat laudantium tenetur, culpa harum, libero nemo!
-        </p>
+        <p className="mt-2 text-xs text-gray-600 line-clamp-3">{description}</p>
 
         <div className="mt-5 flex w-full items-end justify-between gap-5">
           <h3 className="text-xl font-semibold text-gray-800 flex-shrink-0">
-            LKR 250.00
+            {currencyFormatter(amount)}
           </h3>
           <div className="w-full flex items-center justify-end gap-2">
             <Button className="w-full">Buy</Button>

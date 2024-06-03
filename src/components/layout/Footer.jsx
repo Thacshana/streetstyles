@@ -5,9 +5,9 @@ import { Button } from "../ui/button";
 
 const Footer = () => {
   return (
-    <footer className="px-3 md:px-0 py-3 w-full max-w-screen-xl mx-auto">
-      <div className="w-full flex items-start justify-between gap-10">
-        <div className="flex items-center justify-start gap-2">
+    <footer className="px-3 xl:px-0 py-3  w-full max-w-screen-xl mx-auto">
+      <div className="w-full flex-col md:flex-row flex items-start justify-between gap-10">
+        <div className="w-full md:w-auto flex items-center justify-start gap-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="w-9 h-9 text-[#480ca8] flex-shrink-0"
@@ -42,8 +42,8 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="flex items-end justify-end gap-3">
-          <div className="">
+        <div className="w-full md:w-auto flex items-end md:justify-end gap-3">
+          <div className="w-full md:w-auto">
             <label
               className="text-sm font-medium text-gray-800"
               htmlFor="email"
@@ -60,22 +60,22 @@ const Footer = () => {
       </div>
 
       <div className="mt-7 md:flex items-center justify-start gap-8 hidden">
-        <Link href="/home">
+        <Link href="#">
           <p className="text-sm text-gray-700 hover:text-gray-800 hover:underline">
             Home
           </p>
         </Link>
-        <Link href="/home">
+        <Link href="#">
           <p className="text-sm text-gray-700 hover:text-gray-800 hover:underline">
             Products
           </p>
         </Link>
-        <Link href="/home">
+        <Link href="#">
           <p className="text-sm text-gray-700 hover:text-gray-800 hover:underline">
             Resources
           </p>
         </Link>
-        <Link href="/home">
+        <Link href="#">
           <p className="text-sm text-gray-700 hover:text-gray-800 hover:underline">
             Contact Us
           </p>
@@ -89,17 +89,17 @@ const Footer = () => {
         </p>
 
         <div className="md:flex items-center justify-start gap-8 hidden">
-          <Link href="/home">
+          <Link href="#">
             <p className="text-xs text-gray-500 hover:text-gray-600 hover:underline">
               Terms
             </p>
           </Link>
-          <Link href="/home">
+          <Link href="#">
             <p className="text-xs text-gray-500 hover:text-gray-600 hover:underline">
               Privacy
             </p>
           </Link>
-          <Link href="/home">
+          <Link href="#">
             <p className="text-xs text-gray-500 hover:text-gray-600 hover:underline">
               Cookies
             </p>

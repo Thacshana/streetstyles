@@ -11,10 +11,12 @@ import {
   PaginationPrevious,
 } from "@/components/ui/pagination";
 
+import products from "./products";
+
 export default function Home() {
   return (
     <>
-      <section className="pb-10">
+      <section className="pb-10 px-3 xl:px-0">
         <header className="relative mt-20 w-full">
           {/* background effects */}
           <div className="pointer-events-none absolute inset-x-0 h-full w-full [mask-image:linear-gradient(0deg,transparent,black)]">
@@ -49,7 +51,7 @@ export default function Home() {
         {/* body */}
         <div className="w-full max-w-screen-xl mx-auto mt-10">
           <Tabs defaultValue="all" className="w-full">
-            <TabsList className="bg-transparent w-full justify-start mb-5">
+            <TabsList className="bg-transparent w-full overflow-x-auto justify-start mb-5">
               <TabsTrigger
                 className="data-[state=active]:text-[#3F37C9]"
                 value="all"
@@ -85,17 +87,32 @@ export default function Home() {
             <TabsContent value="all">
               <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-10">
                 {/* card */}
-                {Array.from(Array(10).keys()).map((_, idx) => (
-                  <Card key={idx} image={idx + 1} />
-                ))}
+                {Object.values(products)
+                  .flat(2)
+                  .reverse()
+                  .map((product, idx) => (
+                    <Card
+                      key={idx}
+                      title={product.title}
+                      description={product.description}
+                      amount={product.amount}
+                      image={product.image}
+                    />
+                  ))}
                 {/* card */}
               </div>
             </TabsContent>
             <TabsContent value="women">
               <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-10">
                 {/* card */}
-                {Array.from(Array(10).keys()).map((_, idx) => (
-                  <Card key={idx} image={idx + 1} />
+                {products.women.map((product, idx) => (
+                  <Card
+                    key={idx}
+                    title={product.title}
+                    description={product.description}
+                    amount={product.amount}
+                    image={product.image}
+                  />
                 ))}
                 {/* card */}
               </div>
@@ -103,8 +120,14 @@ export default function Home() {
             <TabsContent value="men">
               <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-10">
                 {/* card */}
-                {Array.from(Array(10).keys()).map((_, idx) => (
-                  <Card key={idx} image={idx + 1} />
+                {products.men.map((product, idx) => (
+                  <Card
+                    key={idx}
+                    title={product.title}
+                    description={product.description}
+                    amount={product.amount}
+                    image={product.image}
+                  />
                 ))}
                 {/* card */}
               </div>
@@ -112,8 +135,14 @@ export default function Home() {
             <TabsContent value="kids">
               <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-10">
                 {/* card */}
-                {Array.from(Array(10).keys()).map((_, idx) => (
-                  <Card key={idx} image={idx + 1} />
+                {products.kids.map((product, idx) => (
+                  <Card
+                    key={idx}
+                    title={product.title}
+                    description={product.description}
+                    amount={product.amount}
+                    image={product.image}
+                  />
                 ))}
                 {/* card */}
               </div>
@@ -121,8 +150,14 @@ export default function Home() {
             <TabsContent value="cosmetics">
               <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-10">
                 {/* card */}
-                {Array.from(Array(10).keys()).map((_, idx) => (
-                  <Card key={idx} image={idx + 1} />
+                {products.cosmetics.map((product, idx) => (
+                  <Card
+                    key={idx}
+                    title={product.title}
+                    description={product.description}
+                    amount={product.amount}
+                    image={product.image}
+                  />
                 ))}
                 {/* card */}
               </div>
@@ -130,7 +165,7 @@ export default function Home() {
           </Tabs>
 
           <Pagination className={"mt-10"}>
-            <PaginationContent>
+            <PaginationContent className="flex-wrap">
               <PaginationItem>
                 <PaginationPrevious href="#" />
               </PaginationItem>

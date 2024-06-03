@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 
 const Navbar = () => {
   return (
-    <nav className="px-3 md:px-0 py-3 w-full max-w-screen-xl mx-auto flex items-center justify-between gap-10">
+    <nav className="px-3 xl:px-0 py-3 w-full max-w-screen-xl mx-auto flex items-center justify-between gap-10">
       <div className="flex items-center justify-start gap-2">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -41,22 +41,22 @@ const Navbar = () => {
       </div>
 
       <div className="md:flex items-center justify-center gap-8 hidden">
-        <Link href="/home">
+        <Link href="#">
           <p className="text-sm text-gray-700 hover:text-gray-800 hover:underline">
             Home
           </p>
         </Link>
-        <Link href="/home">
+        <Link href="#">
           <p className="text-sm text-gray-700 hover:text-gray-800 hover:underline">
             Products
           </p>
         </Link>
-        <Link href="/home">
+        <Link href="#">
           <p className="text-sm text-gray-700 hover:text-gray-800 hover:underline">
             Resources
           </p>
         </Link>
-        <Link href="/home">
+        <Link href="#">
           <p className="text-sm text-gray-700 hover:text-gray-800 hover:underline">
             Contact Us
           </p>

@@ -1,0 +1,253 @@
+export default {
+  women: [
+    {
+      title: "Elegant Dress",
+      description: "A stylish and elegant dress perfect for evening parties.",
+      amount: 150,
+      image: `women/1`,
+    },
+    {
+      title: "Casual Blouse",
+      description: "A comfortable and casual blouse for everyday wear.",
+      amount: 40,
+      image: `women/2`,
+    },
+    {
+      title: "Formal Jacket",
+      description: "A sophisticated jacket suitable for formal occasions.",
+      amount: 120,
+      image: `women/3`,
+    },
+    {
+      title: "Summer Skirt",
+      description: "A light and airy skirt for hot summer days.",
+      amount: 60,
+      image: `women/4`,
+    },
+    {
+      title: "Trendy Jeans",
+      description: "High-waisted jeans with a modern fit.",
+      amount: 70,
+      image: `women/0`,
+    },
+    {
+      title: "Winter Coat",
+      description: "A warm and stylish winter coat.",
+      amount: 200,
+      image: `women/1`,
+    },
+    {
+      title: "Athletic Shorts",
+      description: "Comfortable shorts for workouts and runs.",
+      amount: 35,
+      image: `women/2`,
+    },
+    {
+      title: "Cocktail Dress",
+      description: "A stunning cocktail dress for special occasions.",
+      amount: 180,
+      image: `women/3`,
+    },
+    {
+      title: "Boho Top",
+      description: "A bohemian style top with intricate patterns.",
+      amount: 55,
+      image: `women/4`,
+    },
+    {
+      title: "Chic Pants",
+      description: "Chic and comfortable pants for daily wear.",
+      amount: 85,
+      image: `women/0`,
+    },
+  ],
+
+  men: [
+    {
+      title: "Casual Shirt",
+      description: "A casual shirt for everyday wear.",
+      amount: 45,
+      image: `men/1`,
+    },
+    {
+      title: "Denim Jacket",
+      description: "A classic denim jacket with a modern twist.",
+      amount: 110,
+      image: `men/2`,
+    },
+    {
+      title: "Slim Fit Jeans",
+      description: "Comfortable slim fit jeans for a modern look.",
+      amount: 70,
+      image: `men/3`,
+    },
+    {
+      title: "Sports T-Shirt",
+      description: "A breathable t-shirt for sports and workouts.",
+      amount: 30,
+      image: `men/4`,
+    },
+    {
+      title: "Formal Suit",
+      description: "A sharp and elegant formal suit.",
+      amount: 300,
+      image: `men/0`,
+    },
+    {
+      title: "Chino Pants",
+      description: "Versatile chino pants for smart-casual outfits.",
+      amount: 60,
+      image: `men/1`,
+    },
+    {
+      title: "Winter Sweater",
+      description: "A warm sweater for the winter season.",
+      amount: 90,
+      image: `men/2`,
+    },
+    {
+      title: "Leather Jacket",
+      description: "A trendy leather jacket for a bold look.",
+      amount: 200,
+      image: `men/3`,
+    },
+    {
+      title: "Polo Shirt",
+      description: "A classic polo shirt for a smart-casual look.",
+      amount: 50,
+      image: `men/4`,
+    },
+    {
+      title: "Cargo Shorts",
+      description: "Practical cargo shorts with multiple pockets.",
+      amount: 40,
+      image: `men/0`,
+    },
+  ],
+
+  kids: [
+    {
+      title: "Graphic Tee",
+      description: "A fun graphic tee for kids.",
+      amount: 20,
+      image: `kids/1`,
+    },
+    {
+      title: "Denim Overalls",
+      description: "Cute and comfortable denim overalls.",
+      amount: 35,
+      image: `kids/2`,
+    },
+    {
+      title: "Winter Jacket",
+      description: "A warm winter jacket for kids.",
+      amount: 60,
+      image: `kids/3`,
+    },
+    {
+      title: "Playtime Shorts",
+      description: "Durable shorts perfect for playtime.",
+      amount: 15,
+      image: `kids/4`,
+    },
+    {
+      title: "Summer Dress",
+      description: "A light and colorful summer dress.",
+      amount: 30,
+      image: `kids/0`,
+    },
+    {
+      title: "School Uniform",
+      description: "Classic school uniform set.",
+      amount: 50,
+      image: `kids/1`,
+    },
+    {
+      title: "Raincoat",
+      description: "Waterproof raincoat with a fun design.",
+      amount: 40,
+      image: `kids/2`,
+    },
+    {
+      title: "Sports Tracksuit",
+      description: "Comfortable tracksuit for sports activities.",
+      amount: 45,
+      image: `kids/3`,
+    },
+    {
+      title: "Pajama Set",
+      description: "Cozy pajama set with cute patterns.",
+      amount: 25,
+      image: `kids/4`,
+    },
+    {
+      title: "Swimwear",
+      description: "Bright and fun swimwear for kids.",
+      amount: 20,
+      image: `kids/0`,
+    },
+  ],
+
+  cosmetics: [
+    {
+      title: "Lipstick",
+      description: "Long-lasting lipstick in various shades.",
+      amount: 15,
+      image: `cosmetics/1`,
+    },
+    {
+      title: "Foundation",
+      description: "Smooth and lightweight foundation.",
+      amount: 30,
+      image: `cosmetics/2`,
+    },
+    {
+      title: "Mascara",
+      description: "Volumizing mascara for fuller lashes.",
+      amount: 20,
+      image: `cosmetics/3`,
+    },
+    {
+      title: "Blush",
+      description: "Natural blush for a rosy glow.",
+      amount: 25,
+      image: `cosmetics/4`,
+    },
+    {
+      title: "Eyeshadow Palette",
+      description: "Versatile eyeshadow palette with multiple colors.",
+      amount: 35,
+      image: `cosmetics/0`,
+    },
+    {
+      title: "Nail Polish",
+      description: "Quick-drying nail polish in various shades.",
+      amount: 10,
+      image: `cosmetics/1`,
+    },
+    {
+      title: "Face Serum",
+      description: "Hydrating face serum for smooth skin.",
+      amount: 40,
+      image: `cosmetics/2`,
+    },
+    {
+      title: "Concealer",
+      description: "Full-coverage concealer for a flawless finish.",
+      amount: 18,
+      image: `cosmetics/3`,
+    },
+    {
+      title: "Highlighter",
+      description: "Shimmering highlighter for a radiant look.",
+      amount: 22,
+      image: `cosmetics/4`,
+    },
+    {
+      title: "Setting Spray",
+      description: "Setting spray to keep makeup in place.",
+      amount: 28,
+      image: `cosmetics/0`,
+    },
+  ],
+};
